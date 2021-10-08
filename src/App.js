@@ -6,7 +6,7 @@ import ContactPage from "./components/ContactPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react-portfolio">
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/contact" component={ContactPage} exact />
