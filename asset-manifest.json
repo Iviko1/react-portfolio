@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.b2e973d0.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.e1c252a8.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.e1c252a8.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.7530632e.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.7530632e.js.map",
+    "static/js/2.23131817.chunk.js": "/react-portfolio/static/js/2.23131817.chunk.js",
+    "static/js/2.23131817.chunk.js.map": "/react-portfolio/static/js/2.23131817.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/main.b2e973d0.chunk.css.map": "/react-portfolio/static/css/main.b2e973d0.chunk.css.map",
+    "static/js/2.23131817.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.23131817.chunk.js.LICENSE.txt",
+    "static/media/about.2f1aaa15.svg": "/react-portfolio/static/media/about.2f1aaa15.svg",
+    "static/media/css.4e47c312.svg": "/react-portfolio/static/media/css.4e47c312.svg",
+    "static/media/html.f318c8b1.svg": "/react-portfolio/static/media/html.f318c8b1.svg",
+    "static/media/javascript.b879f838.svg": "/react-portfolio/static/media/javascript.b879f838.svg",
+    "static/media/laravel.ba995bd4.svg": "/react-portfolio/static/media/laravel.ba995bd4.svg",
+    "static/media/node.615ffbea.svg": "/react-portfolio/static/media/node.615ffbea.svg",
+    "static/media/react.4ee8d000.svg": "/react-portfolio/static/media/react.4ee8d000.svg",
+    "static/media/video.d48e2181.mp4": "/react-portfolio/static/media/video.d48e2181.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7530632e.js",
+    "static/js/2.23131817.chunk.js",
+    "static/css/main.b2e973d0.chunk.css",
+    "static/js/main.e1c252a8.chunk.js"
+  ]
+}
