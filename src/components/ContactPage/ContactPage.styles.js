@@ -40,14 +40,13 @@ export const Icon = styled(Link)`
   font-size: 2rem;
   transition: color 0.3s ease-in-out;
   letter-spacing: 2px;
-
+  z-index: 999;
   &:hover {
     color: #232323;
   }
 
   @media screen and (max-width: 480px) {
-    margin-left: 1rem;
-    margin-top: 0.5rem;
+    display: none;
   }
 `;
 
@@ -104,6 +103,17 @@ export const FormInput = styled.input`
   font-size: 1rem;
 `;
 
+export const FormTextArea = styled.textarea`
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: #01bf71;
+  outline: none;
+  font-size: 1rem;
+  resize: vertical;
+`;
+
 export const FormButton = styled.button`
   background: #01bf71;
   padding: 1rem 0;
@@ -127,7 +137,7 @@ export const CloseIcon = styled(Link)`
   margin-right: 2rem;
   margin-top: 2rem;
   transition: color 0.3s ease-in-out;
-
+  z-index: 999;
   &:hover {
     color: #232323;
   }
