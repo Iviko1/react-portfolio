@@ -1,4 +1,5 @@
 import about from "../../images/about.svg";
+import contact from "../../images/contact.svg";
 
 export const AboutObj = {
   id: "about",
@@ -24,4 +25,19 @@ export const ProjectObj = {
   dark: 0,
   primary: 0,
   to: "contact",
+};
+
+export const ContactObj = {
+  id: "contact",
+  buttonLabel: "Contact Me",
+  dark: 1,
+  primary: 1,
+  lightText: 1,
+  topLine: "Contact",
+  headLine: "Feel Free To Contact Me Anytime",
+  description:
+    "I would greatly appreciate any type of offer whether it is freelancing, part-time or full-time.",
+  to: "/contact",
+  imgStart: 1,
+  img: contact,
 };

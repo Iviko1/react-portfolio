@@ -1,54 +1,67 @@
-import React from "react";
-import react from "../../images/react.svg";
-import laravel from "../../images/laravel.svg";
-import node from "../../images/node.svg";
-import javascript from "../../images/javascript.svg";
-import css from "../../images/css.svg";
-import html from "../../images/html.svg";
+import React, { useState } from "react";
+
 import {
   ContactContainer,
-  ContactH1,
-  ContactH2,
   ContactWrapper,
-  ContactCard,
-  ContactIcon,
-  ContactBtnWrap,
+  ContactRow,
+  Column1,
+  TextWrapper,
+  TopLine,
+  Heading,
+  Subtitle,
+  BtnWrap,
+  Column2,
   ContactBtnLink,
+  ArrowForward,
+  ArrowRight,
+  Img,
+  ImgWrap,
 } from "./ContactSection.styles";
 
-const ContactSection = () => {
+const ContactSection = ({
+  lightBg,
+  id,
+  imgStart,
+  topLine,
+  lightText,
+  headLine,
+  darkText,
+  description,
+  buttonLabel,
+  img,
+  alt,
+}) => {
+  const [hover, setHover] = useState(false);
+  const onHover = () => {
+    setHover(!hover);
+  };
   return (
-    <ContactContainer id="contact">
-      <ContactH1>Contact Me</ContactH1>
+    <ContactContainer lightBg={lightBg} id={id}>
       <ContactWrapper>
-        <ContactCard>
-          <ContactIcon src={html} />
-          <ContactH2>HTML</ContactH2>
-        </ContactCard>
-        <ContactCard>
-          <ContactIcon src={css} />
-          <ContactH2>CSS</ContactH2>
-        </ContactCard>
-        <ContactCard>
-          <ContactIcon src={javascript} />
-          <ContactH2>Javascript</ContactH2>
-        </ContactCard>
-        <ContactCard>
-          <ContactIcon src={react} />
-          <ContactH2>React</ContactH2>
-        </ContactCard>
-        <ContactCard>
-          <ContactIcon src={laravel} />
-          <ContactH2>Laravel</ContactH2>
-        </ContactCard>
-        <ContactCard>
-          <ContactIcon src={node} />
-          <ContactH2>Node</ContactH2>
-        </ContactCard>
+        <ContactRow imgStart={imgStart}>
+          <Column1>
+            <TextWrapper>
+              <TopLine>{topLine}</TopLine>
+              <Heading lightText={lightText}>{headLine}</Heading>
+              <Subtitle darkText={darkText}>{description}</Subtitle>
+              <BtnWrap>
+                <ContactBtnLink
+                  onMouseEnter={onHover}
+                  onMouseLeave={onHover}
+                  to="/contact"
+                >
+                  {buttonLabel} {hover ? <ArrowForward /> : <ArrowRight />}
+                </ContactBtnLink>
+              </BtnWrap>
+            </TextWrapper>
+          </Column1>
+          <Column2>
+            <ImgWrap>
+              <Img src={img} alt={alt} />
+            </ImgWrap>
+          </Column2>
+        </ContactRow>
       </ContactWrapper>
-      <ContactBtnWrap>
-        <ContactBtnLink to="/contact">Contact</ContactBtnLink>
-      </ContactBtnWrap>
     </ContactContainer>
   );
 };
